@@ -24,17 +24,17 @@ public class LanguajeServiceImpl implements LanguajeService {
 
     @Override
     public Languaje updateLanguaje(Languaje languaje) {
-        Optional<Languaje> languajeDb = this.languajeRepository.findById(languaje.getId());
+        Optional<Languaje> languajeDb = this.languajeRepository.findById(languaje.getIdLanguaje());
 
         if (languajeDb.isPresent()){
             Languaje languajeUpdate = languajeDb.get();
-            languajeUpdate.setId(languaje.getId());
+            languajeUpdate.setIdLanguaje(languaje.getIdLanguaje());
             languajeUpdate.setName(languaje.getCode());
             languajeUpdate.setCode(languaje.getCode());
             languajeRepository.save(languajeUpdate);
             return languajeUpdate;
         }else {
-            throw new ResourceNotFoundException("Record not found with id : " + languaje.getId());
+            throw new ResourceNotFoundException("Record not found with id : " + languaje.getIdLanguaje());
         }
     }
 

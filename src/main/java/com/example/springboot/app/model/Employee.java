@@ -7,7 +7,7 @@ import javax.persistence.*;
 public class Employee {
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
-        private long id;
+        private long id_employee;
 
         @Column(name = "surname")
         private String surname;
@@ -15,12 +15,21 @@ public class Employee {
         @Column(name = "firstname")
         private String firstname;
 
-        public long getId() {
-            return id;
+        @Column(name = "country")
+        private String country;
+
+        @Column(name = "languaje")
+        private String languaje;
+
+        @Column(name = "airport")
+        private String airport;
+
+        public long getId_employee() {
+            return id_employee;
         }
 
-        public void setId(long id) {
-            this.id = id;
+        public void setId_employee(long id_employee) {
+            this.id_employee = id_employee;
         }
 
         public String getSurname() {
@@ -39,6 +48,31 @@ public class Employee {
             this.firstname = firstname;
         }
 
+        public String getCountry() {
+            return country;
+        }
+
+        public void setCountry(String country) {
+            this.country = country;
+        }
+
+        public String getLanguaje() {
+            return languaje;
+        }
+
+        public void setLanguaje(String languaje) {
+            this.languaje = languaje;
+        }
+
+        public String getAirport() {
+            return airport;
+        }
+
+        public void setAirport(String airport) {
+            this.airport = airport;
+        }  
+
+        
     }
 
 

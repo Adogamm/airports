@@ -1,13 +1,13 @@
-package com.example.springboot.app;
+// package com.example.springboot.app;
 
-import org.junit.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+// import org.junit.Test;
+// import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
-class SpringSecurityJwtApplicationTests {
+// @SpringBootTest
+// class SpringSecurityJwtApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+// 	@Test
+// 	void contextLoads() {
+// 	}
 
-}
+// }
