@@ -23,7 +23,7 @@ public class CountryController {
     @Autowired
     private CountryService CountryService;
 
-    @GetMapping("/list_Countrys")
+    @GetMapping("/list_Countries")
     public ResponseEntity<?> getAllCountry(){
         List<Country> lista = CountryService.getAllCountrys();
         if(lista.isEmpty()){
